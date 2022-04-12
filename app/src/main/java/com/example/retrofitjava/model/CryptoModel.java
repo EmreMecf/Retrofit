@@ -5,8 +5,16 @@ import com.google.gson.annotations.SerializedName;
 public class CryptoModel {
 
     @SerializedName("currency")
-    String currency;
+    private String currency;
 
     @SerializedName("price")
-    String price;
+    private String price;
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public String getPrice() {
+        return price;
+    }
 }
